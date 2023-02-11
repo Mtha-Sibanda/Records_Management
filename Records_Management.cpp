@@ -8,11 +8,11 @@ using namespace std;
 void showMenu();
 void handleOption(int option, vector<Employee>& database);
 
-int main()
+int main() 
 {
    vector<Employee> database;
    int option;
-   do
+   do 
    {
       showMenu();
       cin >> option;
@@ -22,7 +22,7 @@ int main()
    return 0;
 }
 
-void showMenu()
+void showMenu() 
 {
    cout << "1. Add Employee" << endl;
    cout << "2. View Employees" << endl;
@@ -31,14 +31,15 @@ void showMenu()
    cout << "Enter your choice: ";
 }
 
-void handleOption(int option, vector<Employee>& database)
+void handleOption(int option, vector<Employee>& database) 
 {
-   switch (option)
+   switch (option) 
    {
    case 1:
    {
       string name, designation;
-      int age, salary;
+      int age; 
+      float salary;
       cout << "Enter name: ";
       cin >> name;
       cout << "Enter age: ";
@@ -54,7 +55,7 @@ void handleOption(int option, vector<Employee>& database)
    }
    case 2:
       cout << "Employees:" << endl;
-      for (Employee employee : database)
+      for (Employee employee : database) 
       {
          cout << "Name: " << employee.getName() << endl;
          cout << "Age: " << employee.getAge() << endl;

@@ -9,15 +9,22 @@ class AddEmployee
 public:
    static void addEmployeeToDatabase(std::vector<Employee>& database)
    {
-      Employee employee;
+      // Get employee information from user
+      std::string name;
+      int age;
+      std::string designation;
+      float salary;
       cout << "Enter the name of the employee: ";
-      cin >> employee.name;
+      cin >> name;
       cout << "Enter the age of the employee: ";
-      cin >> employee.age;
+      cin >> age;
       cout << "Enter the designation of the employee: ";
-      cin >> employee.designation;
+      cin >> designation;
       cout << "Enter the salary of the employee: ";
-      cin >> employee.salary;
+      cin >> salary;
+
+      // Create the employee object
+      Employee employee(name, age, designation, salary);
 
       // Adds the employee to the database
       database.push_back(employee);
