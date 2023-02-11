@@ -24,11 +24,12 @@ int main()
 
 void showMenu() 
 {
-   cout << "1. Add Employee" << endl;
-   cout << "2. View Employees" << endl;
-   cout << "3. Edit Employee" << endl;
-   cout << "4. Quit" << endl;
-   cout << "Enter your choice: ";
+   cout << "\t\t\t------------  Main Menu ------------" << endl << endl;
+   cout << "\t\t\t\t1. Add Employee" << endl;
+   cout << "\t\t\t\t2. View Employees" << endl;
+   cout << "\t\t\t\t3. Edit Employee" << endl;
+   cout << "\t\t\t\t4. Quit" << endl << endl;
+   cout << "\t\tEnter your choice: ";
 }
 
 void handleOption(int option, vector<Employee>& database) 
