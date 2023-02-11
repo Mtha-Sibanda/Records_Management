@@ -127,7 +127,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="AddEmployee.cpp" />
+    <ClCompile Include="Employee.cpp" />
     <ClCompile Include="Records_Management.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AddEmployee.h" />
+    <ClInclude Include="Employee.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
