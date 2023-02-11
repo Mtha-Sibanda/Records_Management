@@ -2,12 +2,32 @@
 
 using namespace std;
 
-// Constructor to initialize the member variables
-Employee::Employee(string name, int age, string designation, float salary)
-   : name(name), age(age), designation(designation), salary(salary) {}
+Employee::Employee(string name, int age, string designation, int salary)
+{
+    this->name = name;
+    this->age = age;
+    this->designation = designation;
+    this->salary = salary;
+}
 
-// Getter functions for the member variables
-string Employee::getName() { return name; }
-int Employee::getAge() { return age; }
-string Employee::getDesignation() { return designation; }
-float Employee::getSalary() { return salary; }
+string Employee::getName()
+{
+    return name;
+}
+
+int Employee::getAge()
+{
+    return age;
+}
+
+string Employee::getDesignation()
+{
+    return designation;
+}
+
+/*
+int Employee::getSalary()
+{
+    return salary;
+}
+*/
