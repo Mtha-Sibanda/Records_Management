@@ -2,6 +2,7 @@
 #include <vector>
 #include "AddEmployee.h"
 #include "Employee.h"
+#include "EditEmployee.h"
 
 using namespace std;
 
@@ -66,8 +67,11 @@ void handleOption(int option, vector<Employee>& database)
       }
       break;
    case 3:
-      cout << "Edit option not yet implemented" << endl;
+   {
+      EditEmployee editEmployee;
+      editEmployee.edit(database);
       break;
+   }
    case 4:
       break;
    default:
