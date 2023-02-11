@@ -56,12 +56,13 @@ void handleOption(int option, vector<Employee>& database)
    }
    case 2:
       cout << "Employees:" << endl;
+      cout << "These are the current employees:" << endl;
       for (Employee employee : database) 
       {
          cout << "Name: " << employee.getName() << endl;
          cout << "Age: " << employee.getAge() << endl;
          cout << "Designation: " << employee.getDesignation() << endl;
-         cout << "Salary: " << employee.getSalary() << endl;
+         cout << "Salary: " << employee.getSalary() << endl << endl;
       }
       break;
    case 3:
